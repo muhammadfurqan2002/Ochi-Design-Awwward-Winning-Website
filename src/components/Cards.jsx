@@ -1,8 +1,9 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 function Cards() {
     return (
-        <div className='w-full h-screen bg-zinc-100 flex items-center gap-5 px-32'>
+        <div data-scroll data-scroll-section data-scroll-speed="0" className='overflow-hidden w-full h-screen bg-zinc-100 flex items-center gap-5 px-32'>
 
             <div className=" relative cardContainer  h-[50vh] w-1/2">
                 <div className="card w-full rounded-xl h-full flex justify-center items-center bg-[#004D43]">

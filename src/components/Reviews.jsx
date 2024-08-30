@@ -1,8 +1,10 @@
 import React from 'react'
+import { motion } from 'framer-motion'
+import Cards from './Cards'
 
 function Reviews() {
     return (
-        <div className='w-full pt-8 pb-20'>
+        <div className='overflow-hidden w-full pt-8 pb-20'>
             <div className='px-20 border-b-[1px] pb-10 border-white'>
                 <h1 className='text-5xl tracking-tight font-[Neue Montreal]'>Clients’ reviews</h1>
             </div>
@@ -56,6 +58,10 @@ function Reviews() {
                 <h4>Nina Walloch</h4>
                 <h4 className='underline'>READ</h4>
             </div>
+            <br />
+            <br />
+            <br />
+            <Cards/>
         </div>
     )
 }

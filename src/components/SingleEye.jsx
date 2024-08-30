@@ -12,9 +12,9 @@ const SingleEye = () => {
         // GSAP animation for scroll-triggered movement
         gsap.fromTo(
             ".box1, .box2",
-            { y: 120 },
+            { y: 180 },
             {
-                y: -220, // Move up when scrolling down
+                y: -250, // Move up when scrolling down
                 scrollTrigger: {
                     trigger: "#eyes",
                     scroller: "body",
@@ -45,7 +45,7 @@ const SingleEye = () => {
     }, []);
 
     return (
-        <div className="absolute flex gap-10 -translate-x-[50%] -translate-y-[50%] top-[70%] left-1/2" id="eyes">
+        <div    className="absolute flex gap-10 -translate-x-[50%] -translate-y-[50%] top-[70%] left-1/2" id="eyes">
             <div className="box1 w-[15vw] h-[15vw] flex items-center justify-center bg-zinc-100 rounded-full">
                 <div className="w-2/3 h-2/3 bg-zinc-900 relative rounded-full">
                     <div
