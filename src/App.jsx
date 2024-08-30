@@ -7,6 +7,8 @@ import LandingPage from "./components/LandingPage"
 import Marque from "./components/Marque"
 import NavBar from "./components/NavBar"
 import LocomotiveScroll from 'locomotive-scroll';
+import Reviews from "./components/Reviews"
+import ReadyProject from "./components/ReadyProject"
 
 
 
@@ -22,7 +24,9 @@ function App() {
       <About />
       <Eyes />
       <Feature />
+      <Reviews/>
       <Cards />
+      <ReadyProject/>
       <Footer />
     </div>
   )

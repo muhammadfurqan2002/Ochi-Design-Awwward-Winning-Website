@@ -1,8 +1,8 @@
 import React from 'react'
-
+import { motion } from 'framer-motion'
 function Footer() {
     return (
-        <div className='w-full h-screen bg-zinc-900 px-20 py-20 flex gap-5'>
+        <motion.div   data-scroll data-scroll-section data-scroll-speed="1" className='w-full h-screen bg-zinc-900 px-20 py-20 flex gap-5'>
             <div className="w-1/2 h-full flex flex-col justify-between">
                 <div className="heading">
                     <h1 className='text-[6vw] uppercase font-bold -mb-10'>Eye-</h1>
@@ -23,7 +23,7 @@ function Footer() {
                 </div>
             </div>
 
-        </div>
+        </motion.div>
     )
 }
 
