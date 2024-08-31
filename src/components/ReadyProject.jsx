@@ -6,7 +6,7 @@ import SingleEye from './SingleEye';
 function ReadyProject() {
    
     return (
-        <div  data-scroll data-scroll-section data-scroll-speed="-.3" className='w-full  bg-[#CDEA68] relative' id='Ready'>
+        <div  data-scroll data-scroll-section data-scroll-speed=".5" className='w-full  bg-[#CDEA68] relative' id='Ready'>
             <div    className='eyes  flex flex-col justify-center items-center text-center gap-40 py-20'>
                 <div className='text-[150px] font-bold leading-none'>
                     <h1>READY</h1>

@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 function Footer() {
     return (
-        <motion.div data-scroll data-scroll-section data-scroll-speed="1" className='w-full h-full bg-zinc-900 px-20 py-20  flex gap-5'>
+        <motion.div data-scroll data-scroll-section data-scroll-speed="-.1" className='w-full h-full bg-zinc-900 px-20 py-20  flex gap-5'>
             <div className="w-1/2 flex flex-col justify-between">
                 <div className="heading">
                     <h1 className='text-[6vw] uppercase font-bold -mb-10'>Eye-</h1>

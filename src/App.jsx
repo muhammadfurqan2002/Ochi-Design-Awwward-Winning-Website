@@ -9,6 +9,9 @@ import NavBar from "./components/NavBar"
 import LocomotiveScroll from 'locomotive-scroll';
 import Reviews from "./components/Reviews"
 import ReadyProject from "./components/ReadyProject"
+import WorkLanding from "./components/work/WorkLanding"
+import WorkPurpose from "./components/work/WorkPurpose"
+import WorkMarquee from "./components/work/WorkMarquee"
 
 
 
@@ -19,13 +22,20 @@ function App() {
   return (
     <div className="w-full min-h-screen bg-zinc-900 text-white overflow-hidden">
       <NavBar />
-      <LandingPage />
-      <Marque />
-      <About />
-      <Eyes />
-      <Feature />
-      <Reviews/>
+      {/* <LandingPage /> */}
+      {/* <Marque /> */}
+      {/* <About /> */}
+      {/* <Eyes /> */}
+      {/* <Feature /> */}
+      {/* <Reviews/> */}
       {/* <Cards /> */}
+      {/* <ReadyProject/> */}
+      {/* <Footer /> */}
+
+      {/* Work Page */}
+      <WorkLanding/>
+      <WorkPurpose/>
+      <WorkMarquee/>
       <ReadyProject/>
       <Footer />
     </div>
