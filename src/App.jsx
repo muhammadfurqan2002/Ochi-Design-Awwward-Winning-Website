@@ -1,22 +1,21 @@
-import About from "./components/About"
-import Cards from "./components/Cards"
-import Eyes from "./components/Eyes"
-import Feature from "./components/Feature"
-import Footer from "./components/Footer"
-import LandingPage from "./components/LandingPage"
-import Marque from "./components/Marque"
-import NavBar from "./components/NavBar"
-import LocomotiveScroll from 'locomotive-scroll';
-import Reviews from "./components/Reviews"
-import ReadyProject from "./components/ReadyProject"
-import WorkLanding from "./components/work/WorkLanding"
-import WorkPurpose from "./components/work/WorkPurpose"
-import WorkMarquee from "./components/work/WorkMarquee"
-
-
+import About from "./components/About";
+import Cards from "./components/Cards";
+import Eyes from "./components/Eyes";
+import Feature from "./components/Feature";
+import Footer from "./components/Footer";
+import LandingPage from "./components/LandingPage";
+import Marque from "./components/Marque";
+import NavBar from "./components/NavBar";
+import LocomotiveScroll from "locomotive-scroll";
+import Reviews from "./components/Reviews";
+import ReadyProject from "./components/ReadyProject";
+import WorkLanding from "./components/work/WorkLanding";
+import WorkPurpose from "./components/work/WorkPurpose";
+import WorkMarquee from "./components/work/WorkMarquee";
+import SingleEye from "./components/SingleEye";
+import ServiceLanding from "./components/services/ServiceLanding";
 
 function App() {
-
   const locomotiveScroll = new LocomotiveScroll();
 
   return (
@@ -33,13 +32,17 @@ function App() {
       {/* <Footer /> */}
 
       {/* Work Page */}
-      <WorkLanding/>
+      {/* <WorkLanding/>
       <WorkPurpose/>
       <WorkMarquee/>
-      <ReadyProject/>
-      <Footer />
+      <ReadyProject/> */}
+
+      {/* Services */}
+
+      <ServiceLanding />
+      {/* <Footer /> */}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -14,9 +14,9 @@ function WorkEye() {
         })
     })
     return (
-        <div    className="absolute  flex gap-10 -translate-x-[50%] -translate-y-[50%] top-[75%] left-1/2" id="eyes">
-            <div className="box1 w-[20vw] h-[20vw] flex items-center justify-center bg-zinc-100 rounded-full">
-                <div className="w-2/3 h-2/3 bg-zinc-900 relative rounded-full">
+        <div   className="absolute   flex gap-10 -translate-x-[50%] -translate-y-[50%] top-[75%] left-1/2" id="eyes">
+            <div className="box1 w-[20vw] h-[20vw]  flex items-center justify-center bg-zinc-100 rounded-full">
+                <div className="w-2/3 h-2/3 bg-zinc-900  relative rounded-full">
                     <div
                         style={{ transform: `translate(-50%,-50%) rotate(${rotate}deg)` }}
                         className="line absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] w-full h-6"

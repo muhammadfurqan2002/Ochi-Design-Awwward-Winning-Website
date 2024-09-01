@@ -58,10 +58,6 @@ function Reviews() {
                 <h4>Nina Walloch</h4>
                 <h4 className='underline'>READ</h4>
             </div>
-            <br />
-            <br />
-            <br />
-            <Cards/>
         </div>
     )
 }
