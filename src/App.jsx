@@ -14,6 +14,9 @@ import WorkPurpose from "./components/work/WorkPurpose";
 import WorkMarquee from "./components/work/WorkMarquee";
 import SingleEye from "./components/SingleEye";
 import ServiceLanding from "./components/services/ServiceLanding";
+import Capabilities from "./components/services/Capabilities";
+import ClientCount from "./components/services/ClientCount.jsx";
+import Recommend from "./components/services/Recommend.jsx";
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
@@ -32,15 +35,19 @@ function App() {
       {/* <Footer /> */}
 
       {/* Work Page */}
-      {/* <WorkLanding/>
+      <WorkLanding/>
       <WorkPurpose/>
       <WorkMarquee/>
-      <ReadyProject/> */}
+      <ReadyProject/>
 
       {/* Services */}
 
-      <ServiceLanding />
-      {/* <Footer /> */}
+      {/* <ServiceLanding /> */}
+      {/* <Capabilities/> */}
+      {/* <ClientCount/> */}
+      {/* <Recommend/> */}
+      {/* <ReadyProject/> */}
+      <Footer />
     </div>
   );
 }
