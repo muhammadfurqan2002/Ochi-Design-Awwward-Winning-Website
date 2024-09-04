@@ -12,9 +12,9 @@ function AboutOchi() {
       className="w-full h-full bg-[#F1F1F1] text-black pt-1 relative pb-32"
     >
       <div className="text-structure mt-32 px-10">
-        {["We are", "Ochi design"].map((item, index) => (
+        {["We are", " Ochi design"].map((item, index) => (
           <div className="masker">
-            <div className="w-fit flex overflow-hidden">
+            <div className="w-fit flex overflow-hidden ">
               {index === 1 && (
                 <motion.div
                   initial={{ width: 0 }}
@@ -23,12 +23,65 @@ function AboutOchi() {
                   className=" w-[10vw] mt-4 mr-1 rounded-md h-[5.5vw] -top-[0.1vw] relative bg-red-500"
                 ></motion.div>
               )}
-              <h1
-                className='uppercase  text-8xl leading-[7vw]  h-full tracking-tighter font-["Founders Grotesk"] font-bold '
-                key={index}
+              <motion.div
+                initial="initial"
+                whileHover="hovered"
+                className="relative block overflow-hidden whitespace-nowrap leading-none"
               >
-                {item}
-              </h1>
+                <h1
+                  className='uppercase  text-8xl leading-[7vw]  h-full tracking-tighter font-["Founders Grotesk"] font-bold '
+                  key={index}
+                >
+                  {item.split("").map((l, i) => (
+                    <motion.span
+                      variants={{
+                        initial: {
+                          y: 0,
+                        },
+                        hovered: {
+                          y: "-100%",
+                        },
+                      }}
+                      transition={{
+                        duration: 0.25,
+                        ease: "easeInOut",
+                        delay: 0.025 * i,
+                      }}
+                      key={i}
+                      className="inline-block"
+                    >
+                      {l}
+                    </motion.span>
+                  ))}
+                </h1>
+                <h1
+                  className='uppercase absolute  inset-0 text-8xl leading-[7vw]  h-full tracking-tighter font-["Founders Grotesk"] font-bold '
+                  key={index}
+                >
+                  {item.split("").map((l, i) => (
+                    <motion.span
+                      variants={{
+                        initial: {
+                          y: "100%",
+                        },
+                        hovered: {
+                          y: 0,
+                        },
+                      }}
+                      transition={{
+                        duration: 0.25,
+                        ease: "easeInOut",
+                        delay: 0.025 * i,
+                      }}
+                      
+                      key={i}
+                      className="inline-block"
+                    >
+                      {l}
+                    </motion.span>
+                  ))}
+                </h1>
+              </motion.div>
             </div>
           </div>
         ))}
@@ -68,14 +121,20 @@ function AboutOchi() {
 
       <div className="pt-20">
         <div className="border-zinc-700 border-b-[1px]">
-          <h1 className="text-5xl tracking-tight pb-10 px-10">We save businesses from ugly and <br /> ineffective presentations.</h1>
+          <h1 className="text-5xl tracking-tight pb-10 px-10">
+            We save businesses from ugly and <br /> ineffective presentations.
+          </h1>
         </div>
       </div>
       <div className="px-10 py-20 ">
-        <img src="https://ochi.design/wp-content/uploads/2022/05/017091720030-1340x858.jpg" className="rounded-xl" alt="" />
+        <img
+          src="https://ochi.design/wp-content/uploads/2022/05/017091720030-1340x858.jpg"
+          className="rounded-xl"
+          alt=""
+        />
       </div>
       <div>
-        <Slider/>
+        <Slider />
       </div>
     </div>
   );
