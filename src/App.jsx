@@ -17,6 +17,8 @@ import ServiceLanding from "./components/services/ServiceLanding";
 import Capabilities from "./components/services/Capabilities";
 import ClientCount from "./components/services/ClientCount.jsx";
 import Recommend from "./components/services/Recommend.jsx";
+import AboutOchi from "./components/about/AboutOchi.jsx";
+import Slider from "./components/about/Slider.jsx";
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
@@ -24,30 +26,35 @@ function App() {
   return (
     <div className="w-full min-h-screen bg-zinc-900 text-white overflow-hidden">
       <NavBar />
-      {/* <LandingPage /> */}
-      {/* <Marque /> */}
-      {/* <About /> */}
-      {/* <Eyes /> */}
-      {/* <Feature /> */}
-      {/* <Reviews/> */}
-      {/* <Cards /> */}
-      {/* <ReadyProject/> */}
-      {/* <Footer /> */}
+      {/* <LandingPage />
+      <Marque />
+      <About />
+      <Eyes />
+      <Feature />
+      <Reviews/>
+      <Cards />
+      <ReadyProject/>
+      <Footer /> */}
 
       {/* Work Page */}
-      <WorkLanding/>
+      {/* <WorkLanding/>
       <WorkPurpose/>
       <WorkMarquee/>
-      <ReadyProject/>
+      <ReadyProject/> */}
 
       {/* Services */}
 
-      {/* <ServiceLanding /> */}
-      {/* <Capabilities/> */}
-      {/* <ClientCount/> */}
-      {/* <Recommend/> */}
-      {/* <ReadyProject/> */}
-      <Footer />
+      {/* <ServiceLanding />
+      <Capabilities/>
+      <ClientCount/>
+      <Recommend/>
+      <ReadyProject/> */}
+
+      {/* About */}
+
+      <AboutOchi/>
+     
+      {/* <Footer /> */}
     </div>
   );
 }
