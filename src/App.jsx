@@ -19,6 +19,7 @@ import ClientCount from "./components/services/ClientCount.jsx";
 import Recommend from "./components/services/Recommend.jsx";
 import AboutOchi from "./components/about/AboutOchi.jsx";
 import Slider from "./components/about/Slider.jsx";
+import AboutMarque from "./components/about/AboutMarque.jsx";
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
@@ -52,8 +53,8 @@ function App() {
 
       {/* About */}
 
-      <AboutOchi/>
-     
+      <AboutOchi />
+      <AboutMarque />
       {/* <Footer /> */}
     </div>
   );

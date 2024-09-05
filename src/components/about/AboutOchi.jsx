@@ -5,14 +5,9 @@ import WorkEye from "../work/WorkEye";
 import Slider from "./Slider";
 function AboutOchi() {
   return (
-    <div
-      data-scroll
-      data-scroll-section
-      data-scroll-speed="-.3"
-      className="w-full h-full bg-[#F1F1F1] text-black pt-1 relative pb-32"
-    >
+    <div className="w-full h-full  bg-[#F1F1F1] text-black pt-1 relative pb-32">
       <div className="text-structure mt-32 px-10">
-        {["We are", " Ochi design"].map((item, index) => (
+        {["We, are", "Ochi, design"].map((item, index) => (
           <div className="masker">
             <div className="w-fit flex overflow-hidden ">
               {index === 1 && (
@@ -32,7 +27,7 @@ function AboutOchi() {
                   className='uppercase  text-8xl leading-[7vw]  h-full tracking-tighter font-["Founders Grotesk"] font-bold '
                   key={index}
                 >
-                  {item.split("").map((l, i) => (
+                  {item.split(",").map((l, i) => (
                     <motion.span
                       variants={{
                         initial: {
@@ -58,7 +53,7 @@ function AboutOchi() {
                   className='uppercase absolute  inset-0 text-8xl leading-[7vw]  h-full tracking-tighter font-["Founders Grotesk"] font-bold '
                   key={index}
                 >
-                  {item.split("").map((l, i) => (
+                  {item.split(",").map((l, i) => (
                     <motion.span
                       variants={{
                         initial: {
@@ -73,7 +68,6 @@ function AboutOchi() {
                         ease: "easeInOut",
                         delay: 0.025 * i,
                       }}
-                      
                       key={i}
                       className="inline-block"
                     >
@@ -125,16 +119,13 @@ function AboutOchi() {
             We save businesses from ugly and <br /> ineffective presentations.
           </h1>
         </div>
-      </div>
-      <div className="px-10 py-20 ">
-        <img
-          src="https://ochi.design/wp-content/uploads/2022/05/017091720030-1340x858.jpg"
-          className="rounded-xl"
-          alt=""
-        />
-      </div>
-      <div>
-        <Slider />
+        <div className="px-10 py-20 flex items-center justify-center">
+          <img
+            src="https://ochi.design/wp-content/uploads/2022/05/017091720030-1340x858.jpg"
+            className="rounded-xl"
+            alt=""
+          />
+        </div>
       </div>
     </div>
   );
