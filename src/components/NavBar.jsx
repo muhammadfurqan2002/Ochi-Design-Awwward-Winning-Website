@@ -1,4 +1,5 @@
-import React from 'react'
+import { Link } from "react-router-dom"
+
 
 function NavBar() {
     return (
@@ -14,7 +15,8 @@ function NavBar() {
             </div>
             <div className="links flex gap-10">
                     {["Services","Our Work","About Us","Insights","Contact"].map((item,index)=>(
-                        <a className={`text-lg font-light capitalize ${index===4 && "ml-32" }`} key={index}>{item}</a>
+                        <Link to={item} key={index} >  <a className={`text-lg font-light capitalize ${index===4 && "ml-32" }`} >{item}</a></Link>
+                      
                     ))}
             </div>
         </div>
